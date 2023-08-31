@@ -9,10 +9,16 @@ npm i @brtmvdl/frontend
 ## hot to use
 
 ```html
+<!-- index.html -->
+
 <div id="app"></div>
+
+<script src="./index.js" type="module"></script>
 ```
 
 ```js
+// index.js
+
 const { Frontend, nInput, nButton } = ('@brtmvdl/frontend')
 
 const app = Frontend.fromId('app')
