@@ -1,5 +1,7 @@
 # @brtmvdl/frontend
 
+Front-end as javascript
+
 ## install
 
 ```bash
