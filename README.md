@@ -13,26 +13,36 @@ npm i @brtmvdl/frontend
 ```html
 <!-- index.html -->
 
-<div id="app"></div>
+<head>
+  <script type="importmap">
+    {
+      "imports": {
+        "@brtmvdl/frontend": "./libs/@brtmvdl/frontend/src/index.js"
+      }
+    }
+  </script>
+</head>
 
-<script src="./index.js" type="module"></script>
+<body>
+  <div id="app"></div>
+  <script type="module" src="./index.js"></script>
+</body>
 ```
 
 ```js
 // index.js
 
-const { Frontend, nInput, nButton } = ('@brtmvdl/frontend')
+import { Frontend, nInput, nButton } from '@brtmvdl/frontend'
 
 const app = Frontend.fromId('app')
 
 const input = new nInput()
+input.setPlaceholder('input')
 app.append(input)
 
 const button = new nButton()
-button.on('click', () => {
-  const value = input.getValue()
-  window.alert(`value: ${value}`)
-})
+button.setText('button')
+button.on('click', () => window.alert(`value: ${input.getValue()}`))
 app.append(button)
 ```
 
