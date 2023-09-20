@@ -32,9 +32,9 @@ npm i @brtmvdl/frontend
 ```js
 // index.js
 
-import { Frontend, nInput, nButton } from '@brtmvdl/frontend'
+import { HTML, nInput, nButton } from '@brtmvdl/frontend'
 
-const app = Frontend.fromId('app')
+const app = HTML.fromId('app')
 
 const input = new nInput()
 input.setPlaceholder('input')
