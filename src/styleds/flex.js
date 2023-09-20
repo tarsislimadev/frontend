@@ -1,6 +1,6 @@
-import { Frontend } from '../index.js'
+import { HTML } from '../index.js'
 
-export class nFlex extends Frontend {
+export class nFlex extends HTML {
   getName() {
     return 'flex'
   }

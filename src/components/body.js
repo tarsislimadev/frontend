@@ -1,6 +1,6 @@
-import { Frontend } from '../index.js'
+import { HTML } from '../index.js'
 
-export class BodyComponent extends Frontend {
+export class BodyComponent extends HTML {
   getName() {
     return 'body'
   }

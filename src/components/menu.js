@@ -1,8 +1,8 @@
-import { Frontend } from '../index.js'
+import { HTML } from '../index.js'
 import * as COLORS from '../utils/colors.js'
 import SCREEN from '../components/screen.js'
 
-export class MenuComponent extends Frontend {
+export class MenuComponent extends HTML {
   getName() {
     return 'menu'
   }

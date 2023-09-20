@@ -1,7 +1,7 @@
-import { Frontend } from './frontend.js'
+import { HTML } from './html.js'
 import * as COLORS from './utils/colors.js'
 
-export class nLink extends Frontend {
+export class nLink extends HTML {
   getName() {
     return 'link'
   }

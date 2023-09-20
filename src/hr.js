@@ -1,6 +1,6 @@
-import { Frontend } from './frontend.js'
+import { HTML } from './html.js'
 
-export class nHr extends Frontend {
+export class nHr extends HTML {
   getName() {
     return 'hr'
   }

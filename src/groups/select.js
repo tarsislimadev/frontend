@@ -1,6 +1,6 @@
-import { Frontend, nLabel, nSelect, nError } from '../index.js'
+import { HTML, nLabel, nSelect, nError } from '../index.js'
 
-export class nSelectGroup extends Frontend {
+export class nSelectGroup extends HTML {
   children = {
     label: new nLabel(),
     select: new nSelect(),

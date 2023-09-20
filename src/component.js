@@ -1,6 +1,6 @@
-import { Frontend } from './frontend.js'
+import { HTML } from './html.js'
 
-export class nComponent extends Frontend {
+export class nComponent extends HTML {
   children = {}
 
   getName() {

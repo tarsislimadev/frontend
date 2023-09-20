@@ -1,5 +1,5 @@
-export * from './frontend.js'
-// frontend
+export * from './html.js'
+// HTML
 export * from './component.js'
 export * from './button.js'
 export * from './label.js'

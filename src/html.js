@@ -1,5 +1,5 @@
 
-export class Frontend {
+export class HTML {
   container = document.createElement('div')
   element = document.createElement('div')
 
@@ -18,13 +18,13 @@ export class Frontend {
   onCreate() { }
 
   static fromElement(el = document.createElement('')) {
-    const component = new Frontend()
+    const component = new HTML()
     component.element = el
     return component
   }
 
   static fromId(id) {
-    return Frontend.fromElement(document.getElementById(id))
+    return HTML.fromElement(document.getElementById(id))
   }
 
   getName() {
@@ -167,7 +167,7 @@ export class Frontend {
     return this
   }
 
-  append(el = new Frontend()) {
+  append(el = new HTML()) {
     el.dispatchEvent('create')
 
     this.element.append(el.render())

@@ -1,6 +1,6 @@
-import { Frontend } from './frontend.js'
+import { HTML } from './html.js'
 
-export class nSpan extends Frontend {
+export class nSpan extends HTML {
   getName() {
     return 'span'
   }

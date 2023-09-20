@@ -1,6 +1,6 @@
-import { Frontend } from './frontend.js'
+import { HTML } from './html.js'
 
-export class nImage extends Frontend {
+export class nImage extends HTML {
   getName() {
     return 'image'
   }

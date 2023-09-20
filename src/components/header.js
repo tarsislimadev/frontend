@@ -1,13 +1,13 @@
-import { Frontend, nLink } from '../index.js'
+import { HTML, nLink } from '../index.js'
 import { nFlex } from '../styleds/flex.js'
 
 import * as COLORS from '../../src/utils/colors.js'
 
-export class HeaderComponent extends Frontend {
+export class HeaderComponent extends HTML {
   children = {
-    menu: new Frontend(),
-    logo: new Frontend(),
-    search: new Frontend(),
+    menu: new HTML(),
+    logo: new HTML(),
+    search: new HTML(),
   }
 
   onCreate() {
