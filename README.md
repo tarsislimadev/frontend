@@ -6,13 +6,17 @@ Easy Front-end Node.js library
 
 ## Socials
 
-<a href="https://discord.gg/d3EtbdcN" style="display: inline-block; width: 360px;">
-  <img alt="Discord logo" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b50aa9e99958d574a23_full_logo_black_RGB.png"/>
-</a>
+<div style="display: flex">
+  <a href="https://discord.gg/d3EtbdcN" style="display: inline-block; width: 120px;">
+    <img alt="Discord logo" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ac3c481f273141736_icon_clyde_black_RGB.png"/>
+  </a>
 
-<a href="https://t.me/+KRmg5MlqgMk0MTg5" style="display: inline-block; width: 360px;">
-  <img alt="Telegram logo" src="https://www.forestrysouthafrica.co.za/wp-content/uploads/2020/01/Telegram-logo-Featured-1024x538.jpg"/>
-</a>
+  <div style="width: 20px"></div>
+
+  <a href="https://t.me/+KRmg5MlqgMk0MTg5" style="display: inline-block; width: 120px;">
+    <img alt="Telegram logo" src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png"/>
+  </a>
+</div>
 
 ## install
 
