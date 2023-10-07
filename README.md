@@ -10,9 +10,7 @@ Easy Front-end Node.js library
 
 ## install
 
-```bash
-npm i @brtmvdl/frontend
-```
+[![npm i](./images/npm-i-frontend.png)](https://www.npmjs.com/package/@brtmvdl/frontend)
 
 ## how to use
 
