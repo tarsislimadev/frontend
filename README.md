@@ -18,6 +18,6 @@ Easy Front-end Node.js library
 
 [![index.js](./images/frontend-index-js.png)](./sample/index.js)
 
-## License
+## license
 
 [MIT](./LICENSE)
