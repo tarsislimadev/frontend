@@ -10,13 +10,49 @@ Easy Front-end Node.js library
 
 ## install
 
-[![npm i](./images/npm-i-frontend.png)](https://www.npmjs.com/package/@brtmvdl/frontend)
+```sh
+npm i @brtmvdl/frontend
+```
 
 ## how to use
 
-[![index.html](./images/frontend-index-html.png)](./sample/index.html)
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-end</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "@brtmvdl/frontend": "./libs/@brtmvdl/frontend/src/index.js"
+      }
+    }
+  </script>
+</head>
 
-[![index.js](./images/frontend-index-js.png)](./sample/index.js)
+<body>
+  <div id="app"></div>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
+```
+
+```js
+import { HTML, nInput, nButton } from '@brtmvdl/frontend'
+
+const app = HTML.fromId('app')
+
+const input = new nInput()
+input.setPlaceholder('input')
+app.append(input)
+
+const button = new nButton()
+button.setText('button')
+button.on('click', () => window.alert(`value: ${input.getValue()}`))
+app.append(button)
+
+```
 
 ## license
 
