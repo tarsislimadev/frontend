@@ -10,7 +10,9 @@ Easy Front-end Node.js library
 
 ## install
 
-```sh
+```bash
+# bash
+
 npm i @brtmvdl/frontend
 ```
 
