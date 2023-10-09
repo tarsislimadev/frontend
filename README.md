@@ -17,6 +17,8 @@ npm i @brtmvdl/frontend
 ## how to use
 
 ```html
+<!-- index.html -->
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -39,6 +41,8 @@ npm i @brtmvdl/frontend
 ```
 
 ```js
+// index.js
+
 import { HTML, nInput, nButton } from '@brtmvdl/frontend'
 
 const app = HTML.fromId('app')
