@@ -1,8 +1,6 @@
 import { HTML, nLink } from '../index.js'
 import { nFlex } from '../styleds/flex.js'
 
-import * as COLORS from '../../src/utils/colors.js'
-
 export class HeaderComponent extends HTML {
   children = {
     menu: new HTML(),
@@ -16,8 +14,6 @@ export class HeaderComponent extends HTML {
   }
 
   setStyles() {
-    this.setStyle('background-color', COLORS.BLACK_1)
-    this.setStyle('color', COLORS.WHITE_1)
     this.setStyle('margin-bottom', '1rem')
   }
 
