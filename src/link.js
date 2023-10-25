@@ -1,5 +1,4 @@
 import { HTML } from './html.js'
-import * as COLORS from './utils/colors.js'
 
 export class nLink extends HTML {
   getName() {
@@ -15,7 +14,6 @@ export class nLink extends HTML {
   }
 
   setStyles() {
-    this.setStyle('color', COLORS.WHITE_1)
     this.setStyle('text-decoration', 'none')
   }
 
