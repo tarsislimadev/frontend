@@ -8,7 +8,7 @@ Easy Front-end Node.js library
 
 [Donate](https://link.mercadopago.com.br/brtmvdl) - [Telegram](https://t.me/+KRmg5MlqgMk0MTg5) - [Discord](https://discord.gg/auCmnvV2)
 
-## install
+## how to install
 
 ```bash
 # bash
