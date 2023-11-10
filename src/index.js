@@ -15,6 +15,10 @@ export * from './svg.js'
 export * from './link.js'
 export * from './h1.js'
 export * from './h2.js'
+//
+export * from './table.js'
+export * from './tr.js'
+export * from './td.js'
 // styleds
 export * from './styleds/error.js'
 export * from './styleds/flex.js'
