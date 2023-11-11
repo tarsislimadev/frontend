@@ -16,6 +16,7 @@ Easy Front-end Node.js library
 # bash
 
 npm i @brtmvdl/frontend
+mv node_modules libs
 ```
 
 ## how to use
@@ -59,7 +60,6 @@ const button = new nButton()
 button.setText('button')
 button.on('click', () => window.alert(`value: ${input.getValue()}`))
 app.append(button)
-
 ```
 
 ## license
