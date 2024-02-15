@@ -1,7 +1,7 @@
 import { HTML } from './html.js'
 
-export class nAccordionButtonComponent extends HTML {
+export class nAccordionButton extends HTML {
   getName() {
-    return 'accordion-button-component'
+    return 'accordion-button'
   }
 }

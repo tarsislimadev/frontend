@@ -1,7 +1,7 @@
 import { HTML } from './html.js'
 
-export class nAccordionCollapseComponent extends HTML {
+export class nAccordionCollapse extends HTML {
   getName() {
-    return 'accordion-collapse-component'
+    return 'accordion-collapse'
   }
 }

@@ -1,7 +1,7 @@
 import { HTML } from './html.js'
 
-export class  nAlertLinkComponent extends HTML {
+export class  nAlertLink extends HTML {
   getName() {
-    return 'alert-link-component'
+    return 'alert-link'
   }
 }

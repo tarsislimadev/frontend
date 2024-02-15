@@ -1,7 +1,7 @@
 import { HTML } from './html.js'
 
-export class nAccordionBodyComponent extends HTML {
+export class nAccordionBody extends HTML {
   getName() {
-    return 'accordion-body-component'
+    return 'accordion-body'
   }
 }

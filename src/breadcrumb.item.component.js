@@ -1,7 +1,7 @@
 import { HTML } from './html.js'
 
-export class nBreadcrumbItemComponent extends HTML {
+export class nBreadcrumbItem extends HTML {
   getName() {
-    return 'breadcrumb-item-component'
+    return 'breadcrumb-item'
   }
 }

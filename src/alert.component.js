@@ -1,8 +1,8 @@
 import { HTML } from './html.js'
 
-export class nAlertComponent extends HTML {
+export class nAlert extends HTML {
   getName() {
-    return 'alert-component'
+    return 'alert'
   }
 
   setDismissible() {

@@ -1,8 +1,8 @@
 import { HTML } from './html.js'
 
-export class nBadgeComponent extends HTML {
+export class nBadge extends HTML {
   getName() {
-    return 'badge-component'
+    return 'badge'
   }
 
   setRoundedPill() {
