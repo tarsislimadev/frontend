@@ -1,4 +1,4 @@
-import { nComponent, nError, nInputText, nLabel } from '../index.js'
+import { nComponent, nError, nInputText, nLabel } from './index.js'
 
 export class nInputTextGroup extends nComponent {
   children = {

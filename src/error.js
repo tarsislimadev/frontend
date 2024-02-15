@@ -1,5 +1,5 @@
-import { HTML } from '../index.js'
-import * as COLORS from '../utils/colors.js'
+import { HTML } from './index.js'
+import * as COLORS from './utils/colors.js'
 
 export class nError extends HTML {
   getName() {

@@ -18,9 +18,9 @@ export class HTML {
   onCreate() { }
 
   static fromElement(el = document.createElement('')) {
-    const component = new HTML()
-    component.element = el
-    return component
+    const html = new HTML()
+    html.element = el
+    return html
   }
 
   static fromId(id) {
@@ -41,16 +41,6 @@ export class HTML {
 
   hasContainer() {
     return true
-  }
-
-  addContainerClass(value = '') {
-    this.container.classList.add(value)
-    return this
-  }
-
-  addClass(value = '') {
-    this.element.classList.add(value)
-    return this
   }
 
   removeClass(value = '') {
@@ -81,15 +71,6 @@ export class HTML {
   setId(value = '') {
     this.element.id = value
     return this
-  }
-
-  setContainerStyle(key, value = '') {
-    this.container.style[key] = value
-    return this
-  }
-
-  getContainerStyle(key) {
-    return this.container.style[key]
   }
 
   setStyle(key, value = '') {
@@ -184,6 +165,25 @@ export class HTML {
 
     this.element.prepend(el.render())
     return this
+  }
+
+  addClass(value = '') {
+    this.element.classList.add(value)
+    return this
+  }
+
+  addContainerClass(value = '') {
+    this.container.classList.add(value)
+    return this
+  }
+
+  setContainerStyle(key, value = '') {
+    this.container.style[key] = value
+    return this
+  }
+
+  getContainerStyle(key) {
+    return this.container.style[key]
   }
 
   render() {
