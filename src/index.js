@@ -22,7 +22,7 @@ export * from './table.js'
 export * from './tr.js'
 export * from './td.js'
 // styleds
-export * from './styleds/error.js'
+export * from './error.js'
 export * from './flex.js'
 // groups
 export * from './input.text.group.js'
