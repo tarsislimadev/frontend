@@ -1,5 +1,5 @@
 
-export class HTML {
+export class HTML extends EventTarget {
   container = document.createElement('div')
   element = document.createElement('div')
 
