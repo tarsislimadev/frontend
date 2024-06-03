@@ -16,7 +16,7 @@ jobs:
 
       - uses: actions/setup-node@v3
 
-      - run: npm login --scope=@my-org --registry=https://npm.pkg.github.com
+      - run: npm login --registry=https://npm.pkg.github.com
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
 
