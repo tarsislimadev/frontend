@@ -19,7 +19,7 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
 
-      - run: npm ci
+      # - run: npm ci
 
       - run: npm publish --access public
         env:
