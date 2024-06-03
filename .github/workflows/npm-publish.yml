@@ -22,6 +22,10 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
 
+      - run: npm login
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
