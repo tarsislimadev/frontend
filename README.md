@@ -16,13 +16,15 @@ Easy Front-end Node.js library
 # bash
 
 npm i @brtmvdl/frontend
+
 mv node_modules libs
 ```
 
 ## how to use
 
-[Example 01](./exaples/example-01.md)
-[Example 02](./exaples/example-02.md)
+[Example 01](./exaples/example-01.md) - Linear Style
+
+[Example 02](./exaples/example-02.md) - Object Oriented Style
 
 ## license
 
