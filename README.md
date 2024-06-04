@@ -22,7 +22,7 @@ mv node_modules libs
 
 ## how to use
 
-[Example 01](./exaples/example-01.md) - Linear Style
+[Example 01](./exaples/example-01.md) - (Simple) Linear Style
 
 [Example 02](./exaples/example-02.md) - Object Oriented Style
 
