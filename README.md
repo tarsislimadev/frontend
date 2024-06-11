@@ -26,6 +26,10 @@ mv node_modules libs
 
 [Example 02](./exaples/example-02.md) - Object Oriented Style
 
+## author
+
+[Tarsis Lima](https://www.linkedin.com/in/brtmvdl/)
+
 ## license
 
 [MIT](./LICENSE)
