@@ -1,14 +1,14 @@
-import { nComponent, nError, nInputText, nLabel } from './index.js'
+import { HTML, nInput, nLabel } from './index.js'
 
-export class nInputTextGroup extends nComponent {
+export class nInputGroup extends HTML {
   children = {
     label: new nLabel(),
-    input: new nInputText(),
-    error: new nError(),
+    input: new nInput(),
+    error: new HTML(),
   }
 
   getName() {
-    return 'input-text-group'
+    return 'input-group'
   }
 
   onCreate() {
