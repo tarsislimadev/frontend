@@ -4,6 +4,8 @@ export class HTML extends EventTarget {
   element = document.createElement('div')
 
   constructor() {
+    super()
+
     // element
     this.element = document.createElement(this.getTagName())
     this.element.classList.add(`el-${this.getName()}`)
