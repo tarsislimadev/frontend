@@ -1,7 +1,6 @@
 name: Node.js Package
 
-on:
-  workflow_dispatch:
+on: [workflow_dispatch]
 
 jobs:
   publish-npm:
@@ -15,7 +14,6 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm login --scope=@brtmvdl --registry=https://registry.npmjs.org
-      - run: npm publish --provenance --access public --registry=https://registry.npmjs.org
+      - run: npm login --scope=@brtmvdl && npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
