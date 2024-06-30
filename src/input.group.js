@@ -12,6 +12,7 @@ export class nInputGroup extends HTML {
   }
 
   onCreate() {
+    super.onCreate()
     this.append(this.getLabel())
     this.append(this.getInput())
     this.append(this.getError())

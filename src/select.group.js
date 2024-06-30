@@ -12,6 +12,7 @@ export class nSelectGroup extends HTML {
   }
 
   onCreate() {
+    super.onCreate()
     this.append(this.getLabel())
     this.append(this.getSelect())
     this.append(this.getError())

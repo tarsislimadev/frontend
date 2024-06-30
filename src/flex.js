@@ -6,6 +6,7 @@ export class nFlex extends HTML {
   }
 
   onCreate() {
+    super.onCreate()
     this.setStyles()
     this.spaceBetween()
   }

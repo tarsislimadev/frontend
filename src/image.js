@@ -10,6 +10,7 @@ export class nImage extends HTML {
   }
 
   onCreate() {
+    super.onCreate()
     this.setStyles()
     return this
   }

@@ -10,6 +10,7 @@ export class nLink extends HTML {
   }
 
   onCreate() {
+    super.onCreate()
     this.setStyles()
   }
 

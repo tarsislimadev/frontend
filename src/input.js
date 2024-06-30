@@ -10,6 +10,7 @@ export class nInput extends HTML {
   }
 
   onCreate() {
+    super.onCreate()
     this.setStyles()
   }
 

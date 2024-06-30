@@ -12,7 +12,7 @@ export class HTML extends EventTarget {
     this.container = document.createElement(this.getContainerName())
     this.container.classList.add(`ct-${this.getName()}`)
 
-    this.once('create', () => this.onCreate())
+    this.onCreate()
   }
 
   onCreate() { }
