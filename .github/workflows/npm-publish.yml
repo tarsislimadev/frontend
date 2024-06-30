@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: npm login --scope=@brtmvdl --auth-type=legacy --registry=https://npm.pkg.github.com
+      - run: npm login --scope=@brtmvdl --registry=https://npm.pkg.github.com #  --auth-type=legacy
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
       - run: npm publish --access=public
