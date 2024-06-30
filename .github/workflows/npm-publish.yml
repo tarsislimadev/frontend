@@ -16,6 +16,10 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
       - run: npm login
+        with:
+          registry-url: 'https://registry.npmjs.org'
       - run: npm publish --provenance --access public
         env:
+        with:
+          registry-url: 'https://registry.npmjs.org'
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
