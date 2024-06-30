@@ -1,10 +1,10 @@
-import { HTML, nLabel, nSelect, nError } from './index.js'
+import { HTML, nLabel, nSelect } from './index.js'
 
 export class nSelectGroup extends HTML {
   children = {
     label: new nLabel(),
     select: new nSelect(),
-    error: new nError(),
+    error: new HTML(),
   }
 
   getName() {
