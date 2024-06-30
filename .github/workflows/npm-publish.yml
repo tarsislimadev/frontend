@@ -1,11 +1,6 @@
 name: Node.js Package
 
 on:
-  push:
-    branches: 
-      - 'main'
-  schedule:
-    - cron: '50 23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,15 +10,12 @@ jobs:
       contents: read
       id-token: write
     steps:
-
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v3
         with:
           node-version: '20'
-          # registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://registry.npmjs.org'
       - run: npm login
-
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
