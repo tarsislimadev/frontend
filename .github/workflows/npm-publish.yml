@@ -4,8 +4,12 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: 
+      - 'main'
+  schedule:
+    - cron: '50 23 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
