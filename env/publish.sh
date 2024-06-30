@@ -1,3 +1,7 @@
 #!/usr/bin/sh
 
-npm publish --access public 
+npm login --scope=@brtmvdl --registry=https://registry.npmjs.org
+
+npm publish --access public
+
+npm logout --scope=@brtmvdl --registry=https://registry.npmjs.org
