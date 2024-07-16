@@ -1,6 +1,5 @@
 
 export class HTML extends EventTarget {
-
   element = document.createElement(this.getTagName())
   container = document.createElement('div')
 
@@ -109,6 +108,15 @@ export class HTML extends EventTarget {
   getText(def = null) {
     return this.element.innerText || def
   }
+
+  // events
+
+  dispatch(name, value = {}) {
+    const ev = new Event(name)
+    ev.value = value
+    this.dispatchEvent(ev)
+  }
+
   // dataset
 
   setData(key, value = '') {
