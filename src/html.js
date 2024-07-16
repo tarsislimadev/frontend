@@ -114,7 +114,13 @@ export class HTML extends EventTarget {
   dispatch(name, value = {}) {
     const ev = new Event(name)
     ev.value = value
-    this.dispatchEvent(ev)
+    this.element.dispatchEvent(ev)
+    return this
+  }
+
+  addEventListener(name, fn = (() => {})) {
+    this.element.addEventListener(name, fn)
+    return this
   }
 
   // dataset
