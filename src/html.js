@@ -1,25 +1,22 @@
 
 export class HTML extends EventTarget {
-  container = document.createElement('div')
+
   element = document.createElement('div')
+  container = document.createElement(this.getTagName())
 
   constructor() {
     super()
 
-    // element
-    this.element = document.createElement(this.getTagName())
-    this.element.classList.add(`el-${this.getName()}`)
+    this.appendClass(`el-${this.getName()}`)
 
-    // container
-    this.container = document.createElement(this.getContainerName())
-    this.container.classList.add(`ct-${this.getName()}`)
+    this.appendContainerClass(`ct-${this.getName()}`)
 
     this.onCreate()
   }
 
   onCreate() { }
 
-  static fromElement(el = document.createElement('')) {
+  static fromElement(el = document.createElement('div')) {
     const html = new HTML()
     html.element = el
     return html
@@ -28,6 +25,8 @@ export class HTML extends EventTarget {
   static fromId(id) {
     return HTML.fromElement(document.getElementById(id))
   }
+
+  // element and container
 
   getName() {
     return 'element'
@@ -45,6 +44,18 @@ export class HTML extends EventTarget {
     return true
   }
 
+  // class
+
+  appendClass(value = '') {
+    this.element.classList.add(value)
+    return this
+  }
+
+  appendContainerClass(value = '') {
+    this.container.classList.add(value)
+    return this
+  }
+
   removeClass(value = '') {
     this.element.classList.remove(value)
     return this
@@ -53,27 +64,15 @@ export class HTML extends EventTarget {
   toggleClass(value = '') {
     return this.element.classList.contains(value)
       ? this.removeClass(value)
-      : this.addClass(value)
-  }
-
-  hide() {
-    const displayStyle = this.getStyle('display')
-    this.setData('display', displayStyle)
-    this.setStyle('display', 'none')
-    return this
-  }
-
-  show() {
-    const displayData = this.getData('display', 'inline-block')
-    this.setStyle('display', displayData)
-    this.setData('display', displayData)
-    return this
+      : this.appendClass(value)
   }
 
   setId(value = '') {
     this.element.id = value
     return this
   }
+
+  // style
 
   setStyle(key, value = '') {
     this.element.style[key] = value
@@ -84,6 +83,17 @@ export class HTML extends EventTarget {
     return this.element.style[key] || def
   }
 
+  setContainerStyle(key, value = '') {
+    this.container.style[key] = value
+    return this
+  }
+
+  getContainerStyle(key) {
+    return this.container.style[key]
+  }
+
+  // attr
+
   setAttr(key, value = '') {
     this.element.setAttribute(key, value)
     return this
@@ -93,6 +103,8 @@ export class HTML extends EventTarget {
     return this.element.getAttribute(key) || def
   }
 
+  // text
+
   setText(value = '') {
     this.element.innerText = value
     return this
@@ -101,37 +113,7 @@ export class HTML extends EventTarget {
   getText(def = null) {
     return this.element.innerText || def
   }
-
-  select() {
-    this.element.select()
-    return this
-  }
-
-  on(key, value = (() => { })) {
-    this.element.addEventListener(key, value.bind(this))
-    return this
-  }
-
-  once(key, value = (() => { })) {
-    this.element.addEventListener(key, value.bind(this), { once: true })
-    return this
-  }
-
-  once(key, value = (() => { })) {
-    this.element.addEventListener(key, value.bind(this), { once: true })
-    return this
-  }
-
-  dispatch(ev = new Event('')) {
-    this.element.dispatchEvent(ev)
-    return this
-  }
-
-  dispatchEvent(key, value = {}) {
-    const ev = new Event(key)
-    ev.value = value
-    return this.dispatch(ev)
-  }
+  // dataset
 
   setData(key, value = '') {
     this.element.dataset[key] = value
@@ -150,42 +132,16 @@ export class HTML extends EventTarget {
     return this
   }
 
-  addData(key, value = '') {
-    this.element.dataset[key] = value
-    return this
-  }
-
   append(el = new HTML()) {
-    el.dispatchEvent('create')
-
+    el.onCreate()
     this.element.append(el.render())
     return this
   }
 
   prepend(el = new HTML()) {
-    el.dispatchEvent('create')
-
+    el.onCreate()
     this.element.prepend(el.render())
     return this
-  }
-
-  addClass(value = '') {
-    this.element.classList.add(value)
-    return this
-  }
-
-  addContainerClass(value = '') {
-    this.container.classList.add(value)
-    return this
-  }
-
-  setContainerStyle(key, value = '') {
-    this.container.style[key] = value
-    return this
-  }
-
-  getContainerStyle(key) {
-    return this.container.style[key]
   }
 
   render() {
