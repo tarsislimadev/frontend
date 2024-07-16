@@ -1,17 +1,13 @@
 
 export class HTML extends EventTarget {
 
-  element = document.createElement('div')
-  container = document.createElement(this.getTagName())
+  element = document.createElement(this.getTagName())
+  container = document.createElement('div')
 
   constructor() {
     super()
-
     this.appendClass(`el-${this.getName()}`)
-
     this.appendContainerClass(`ct-${this.getName()}`)
-
-    this.onCreate()
   }
 
   onCreate() { }
