@@ -18,7 +18,7 @@ Easy Front-end Node.js library
 
 ## author
 
-[@brtmvdl](https://www.linkedin.com/in/brtmvdl/)
+[@tarsislimadev](https://www.linkedin.com/in/tarsislimadev/)
 
 ## license
 
